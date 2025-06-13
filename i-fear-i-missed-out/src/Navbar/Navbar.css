@@ -1,0 +1,73 @@
+.navbar-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.navbar-logo {
+    color: red;
+    font-size: 36px;
+    text-align: center;
+    height: auto;
+    width: 20vw;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.navbar-elements {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: auto;
+    color: white;
+    padding: 16px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 42px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar-elements a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 4px; /* Space for underline */
+}
+
+.navbar-elements a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #39FF14; /* Neon green */
+    transition: width 0.3s ease;
+    z-index: 2; /* Above blob, below text */
+}
+
+.navbar-elements a:hover::after {
+    width: 100%; /* Grow left to right */
+}
+
+.navbar-blob {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(128, 0, 128, 0.5);
+    border-radius: 50%;
+    filter: blur(10px);
+    pointer-events: none;
+    transition: left 0.1s ease, top 0.1s ease;
+    z-index: 1;
+}
