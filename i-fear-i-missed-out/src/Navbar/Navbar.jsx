@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -43,10 +44,10 @@ const Navbar = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
-        <a href="">Other Calculators</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/contact">Contact Us</Link>
+        <Link to="/calculators">Other Calculators</Link>
         {isHovering && (
           <div
             className="navbar-blob"

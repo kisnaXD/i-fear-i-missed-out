@@ -25,7 +25,7 @@
     width: 50vw;
     height: auto;
     color: white;
-    padding: 16px 10px;
+    padding: 20px 10px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 42px;
@@ -41,7 +41,7 @@
     text-decoration: none;
     position: relative;
     z-index: 3;
-    padding-bottom: 4px; /* Space for underline */
+    line-height: 1.2;
 }
 
 .navbar-elements a::after {
@@ -51,13 +51,13 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #39FF14; /* Neon green */
-    transition: width 0.3s ease;
-    z-index: 2; /* Above blob, below text */
+    background: #39FF14;
+    transition: width 1s ease;
+    z-index: 2;
 }
 
 .navbar-elements a:hover::after {
-    width: 100%; /* Grow left to right */
+    width: 100%;
 }
 
 .navbar-blob {
