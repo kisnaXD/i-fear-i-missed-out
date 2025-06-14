@@ -1,12 +1,12 @@
 import React from 'react';
-
+import './styling/common.css'
+import './styling/home.css'
 const Home = () => {
-  return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the stock calculator app!</p>
-    </div>
-  );
+    return (
+        <div className="home-main">
+            
+        </div>
+    );
 };
 
 export default Home;

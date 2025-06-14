@@ -1,12 +1,13 @@
 import React from 'react';
+import './styling/common.css'
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the stock calculator app!</p>
-    </div>
-  );
+const About = () => {
+    return (
+        <div>
+            <h1>About Us</h1>
+            <p>Learn about our stock data tools.</p>
+        </div>
+    );
 };
 
-export default Home;
+export default About;
